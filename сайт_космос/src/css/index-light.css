@@ -1,0 +1,1128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #f1e7fab8;
+    width: 100%;
+}
+
+* {
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1700px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.desc {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #7e4489;
+    text-align: center;
+    border-radius: 30px;
+    width: 70px;
+    color: #fff;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: #9d5a98;
+    border: none;
+    color: #fff;
+}
+
+.button:hover {
+    background: #86005e;
+}
+
+/* Шапка */
+
+header {
+    background: #431044;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    color: #03020d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+
+.logo__desc {
+    width: 70%;
+    font-weight: 800;
+    color: #fff;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.menu-bar {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; 
+    align-items: center;
+}
+
+.menu-bar a {
+    color: #fff;
+}
+
+.menu-bar a:hover {
+    color: #ff98f8;
+}
+
+.login-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.content__image img {
+    border-radius: 25px;
+}
+
+/* Секция популярные конкурсы */
+
+.popular-contests {
+    padding: 100px 0;
+}
+
+.popular-contests__block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.popular-contests__content {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content__text {
+    width: 500px;
+}
+
+.content__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.content__link {
+    padding: 10px 20px;
+    background: #ffffff00;
+    border: #000000 solid 3px;
+    border-radius: 15px;
+    color: #000;
+}
+
+/* Секция авторизации */
+
+.authorization {
+    padding: 100px 0;
+}
+
+.authorization .container {
+    position: relative;
+}
+
+.authorization__title {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.authorization__form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.input-field label {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.input-field input {
+    width: 600px;
+    padding: 20px 0 20px 25px;
+    margin: 20px 0 25px;
+    border: #fff solid 3px;
+    border-radius: 30px;
+    background: #00010ba5;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #ffffffe8;
+}
+
+.button-form {
+    display: block;
+    margin: 0  auto;
+    padding: 15px 70px;
+    border-radius: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.authorization__planet_1 {
+    position: absolute;
+    width: 500px;
+    margin-left: 0;
+    z-index: 1;
+    top: 0px;
+    right: 300px;
+}
+
+.authorization__planet_2 {
+    position: absolute;
+    width: 500px;
+    margin-left: 0;
+    z-index: 1;
+    top: 100px;
+    left: 0px;
+}
+
+.authorization__planet_3 {
+    position: absolute;
+    width: 500px;
+    margin-left: 0;
+    z-index: 1;
+    top: 150px;
+    right: -150px;
+}
+
+/* Секция о нас */
+
+.about-us {
+    padding: 100px 0;
+}
+
+.about-us__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.about-us__text__desc {
+    width: 35%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.gallery__image {
+    width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.gallery__image img {
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* Видео-приветствие */
+
+.welcome {
+    padding: 100px 0;
+}
+
+.welcome__title {
+    text-align: center;
+}
+
+.welcome__video{
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Секция конкурсы */
+
+.competitions {
+    padding: 100px 0;
+}
+
+.competitions__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    margin-top: 60px;
+}
+
+.competitions__card {
+    margin-bottom: 20px;
+}
+
+.competitions__image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.competitions__card__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+
+.competitions__card__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px;
+    margin-bottom: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.competitions__card__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Секция поиск */
+
+.search__form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.search__form input {
+    width: 100%;
+    height: 80px;
+    padding-left: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #03020d;
+}
+
+.search__button {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 27px 50px;
+    height: 100%;
+}
+
+.search__form input::placeholder {
+    color: #242424;
+}
+
+/* Секция отзывы */
+
+.reviews {
+    padding: 100px 0;
+}
+
+.reviews__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.reviews__block__content {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__little {
+    width: 400px;
+    padding: 25px 25px;
+    background: #38002b23;
+    border-radius: 25px;
+}
+
+.content__big {
+    width: 600px;
+    height: 450px;
+    padding: 30px 30px;
+    background: #a4007e26;
+    border-radius: 25px;
+}
+
+.content__info__person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.content__person__image {
+    width: 50px;
+    overflow: hidden;
+}
+
+.content__person__image img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content__desc {
+    font-size: 20px;
+}
+
+.content__little__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.content__little__desc {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.content__link__black {
+    display: block;
+    width: 200px;
+}
+
+.content__big__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.content__link__big {
+    margin-top: 30px;
+}
+
+/* Секция с подпиской на рассылку */
+
+.subscription {
+    padding-bottom: 100px;
+}
+
+.sub__title {
+    text-align: center;
+}
+
+.sub__subtitle {
+    font-size: 30px;
+}
+
+.sub__form {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sub__button {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 28px 50px;
+    height: 100%;
+}
+
+.sub__block {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.sub__block input {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    padding-left: 25px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    outline: none;
+}
+
+.sub__block input::placeholder {
+    color: #03020d;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+}
+
+/* Секция подвал */
+
+footer {
+    background: #280029;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.footer__info li {
+    margin-bottom: 20px;
+}
+
+.footer__info a:hover {
+    color: #ff98f8;
+}
+
+.footer__button {
+    padding: 15px 25px;
+    background: #580044;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.footer__button:hover {
+    background: #86005e;
+}
+
+.footer_copyrignt {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Адаптация */
+
+@media (max-width: 2000px) {
+    * {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .header {
+        width: 60%;
+    }
+
+    .authorization__planet_3 {
+        display: none;
+    }
+
+    .authorization__planet_1 {
+        right: 50px;
+        top: 50px;
+    }
+
+    .gallery__image {
+        width: 60%;
+    }
+
+    .image__right img{
+        float: right;
+    }
+
+    .content__desc {
+        font-size: 16px;
+    }
+
+    .content__little__desc {
+        font-size: 12px;
+    }
+
+    .content__big {
+        width: 500px;
+        height: 400px;
+    }
+
+    .content__little {
+        width: 350px;
+    }
+
+    
+} 
+
+@media (max-width: 1770px) {
+    * {
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 150px;
+    } 
+
+    .logo__desc {
+        font-size: 12px;
+    }
+
+    .header__button {
+        padding: 10px 20px;
+    }
+
+    .content__text {
+        width: 45%;
+    }
+
+    .content__image {
+        width: 50%;
+    }
+
+    .menu-bar {
+        width: 80%;
+    }
+
+    .reviews__block__content {
+        position: relative;
+    }
+
+    .content__little {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .content__big {
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .right__content {
+        right: 0;
+    }
+
+    .competitions__image {
+        height: 40%;
+    }
+
+}
+
+@media (max-width: 1580px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .header {
+        width: 55%;
+    }
+
+    .gallery__image {
+        width: 60%;
+    }
+
+    .welcome__video {
+        width: 70%
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .about-us__text__desc {
+        width: 45%;
+    }
+
+    .gallery__image {
+        width: 50%;
+    }
+
+    .gallery__image {
+        height: 30%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .content__big {
+        width: 55%;
+        height: 100%;
+    }
+
+    .sub__form {
+        width: 90%;
+    }
+
+    .sub__block {
+        width: 100%;
+        margin: 20px 0;
+        height: 50px;
+
+    }
+
+    .sub__block input {
+        height: 100%;
+        outline: none;
+    }
+
+    .sub__button {
+        padding: 0 40px;
+        height: 100%;
+    }
+
+}
+ 
+@media (max-width: 1310px) {
+    header .container {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .content__text {
+        width: 40%;
+    }
+
+    .login-list {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1205px) {
+    .authorization__planet_2 {
+        display: none;
+    }
+
+    .authorization__planet_1 {
+        right: -20px;
+        top: 20px;
+    }
+
+    .competitions__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search__form {
+        width: 90%;
+        height: 50px;
+    }
+
+    .search__form input {
+        height: 100%;
+    }
+
+    .search__button {
+        padding: 0 50px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .block_button {
+        display: flex;
+        gap: 15px;
+    }
+
+    .authorization__form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .inline-form {
+        width: 100%;
+    }
+
+    .input-field input {
+        width: 100%;
+        padding: 20px 0 20px 15px;
+    }
+
+    .button-form {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 12px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+
+    .content__description {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .input-field label {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 950px) {
+    .box {
+        padding: 50px 0;
+    }
+
+    .search__form {
+        margin: 25px auto;
+    }
+
+    .reviews__block {
+        margin: 25px auto;
+    }
+
+    .gallery__image {
+        width: 80%;
+    }
+
+    .about-us__text__desc {
+        width: 80%;
+    }
+
+    .about-us__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .image_center {
+        order: 2;
+    }
+
+    .desc_center {
+        order: 1;
+    }
+
+    .footer__info ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .authorization__planet_1 {
+        width: 80%;
+    }
+
+    .popular-contests__content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .content__text {
+        width: 100%;
+        order: 2;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .content__image {
+        order: 1;
+        width: 100%;
+        margin: 0 auto;
+        height: 30%;
+    }
+
+    .content__image img {
+        object-fit: cover;
+    }
+
+    .competitions__cards {
+        display: block;
+    }
+
+    .competitions__card {
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+
+    .competitions__cards {
+        grid-gap: 0;
+    }
+
+    .content__big {
+        width: 100%;
+    }
+
+    .content__little {
+        display: none;
+    }
+
+    .content__link__black {
+        text-align: center;
+    }
+
+    .search {
+        padding: 0;
+    }
+
+    .search__button {
+        padding: 0 20px;
+    }
+
+    .welcome__video {
+        width: 100%;
+    }
+
+    .block_button {
+        display: block;
+    }
+
+    .footer__info {
+        justify-content: space-around;
+    }
+
+    .footer__info ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .popular-contests__block {
+        gap: 5px;
+    }
+
+    a img {
+        width: 15px;
+    }
+
+    .input-field input {
+        padding: 10px 0 10px 15px;
+    }
+
+    .button-form {
+        padding: 12px 40px;
+        font-size: 12px;
+    }
+
+    .about-us__text__desc {
+        line-height: 20px;
+    }
+
+    .about-us__text__desc {
+        width: 100%;
+    }
+
+    .content__big__title {
+        font-size: 25px;
+    }
+
+    .content__big__title {
+        margin: 10px 0;
+    }
+
+    .content__person__image {
+        width: 20%;
+    }
+
+    .content__person__image img {
+        height: 30px;
+    }
+
+    .content__big {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
+   .content__desc {
+    font-size: 10px;
+   }
+
+    .content__person {
+        justify-content: left;
+    }
+
+    .search__form {
+        height: 40px;
+    }
+
+    .sub__block {
+        margin: 20px 0;
+        height: 40px;
+    }
+
+    .sub__block input {
+        padding-left: 10px;
+    }
+
+    .sub__button {
+        padding: 0 15px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .desc {
+        margin: 5px 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo__desc {
+        font-size: 7px;
+    }
+
+    * {
+        font-size: 9px;
+    }
+
+    .box {
+        padding: 25px 0;
+    }
+
+    .header__button {
+        padding: 7px 20px;
+    }
+
+    .authorization__form {
+        width: 100%;
+        left: 0;
+    }
+
+    .input-field input {
+        width: 95%;
+    }
+
+    .content__big {
+        width: 90%;
+    }
+
+    .content__big__title {
+        font-size: 18px;
+    }
+    
+    header .container {
+        padding: 20px 0;
+    }
+
+    .content__link__black {
+        width: 100px;
+    }
+
+    .content__link__big {
+        margin-top: 15px;
+    }
+    
+}
